@@ -5,7 +5,15 @@
 <li {{action 'showCard'}}>{{cardz.name}}</li>
 
 {{#if isCardShowing}}
-<li {{action 'hideCard'}}><img src ="{{cardz.img}}" height = "100" width = "100"/></li>
-<li>{{cardz.color}}</li>
+<li {{action 'hideCard'}}><img src ="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={{cardz.multiverseid}}&type=card" height = "100" width = "100"/></li>
+<li>{{cardz.type}}</li>
+{{#if cardz.colors}}
+{{#link-to 'card' cardz.id}}<li>{{cardz.colors}}</li>{{/link-to}}
+{{else}}
+{{#link-to 'card' cardz.id}}<li>Colorless</li>{{/link-to}}
+
+{{/if}}
+
+
 <p>////////////////////</p>
 {{/if}}

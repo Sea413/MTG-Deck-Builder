@@ -11,7 +11,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         img: this.get('img'),
-        color: this.get('color'),
+        colors: this.get('colors'),
       };
       this.set('addNewCard', false);
       this.sendAction('save2', params);

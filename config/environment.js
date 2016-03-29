@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'magic',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://magiccards.firebaseio.com/',
+    firebase: 'https://magiccards2.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
