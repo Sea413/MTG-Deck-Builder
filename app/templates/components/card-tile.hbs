@@ -1,0 +1,11 @@
+{{yield}}
+
+
+
+<li {{action 'showCard'}}>{{cardz.name}}</li>
+
+{{#if isCardShowing}}
+<li {{action 'hideCard'}}><img src ="{{cardz.img}}" height = "100" width = "100"/></li>
+<li>{{cardz.color}}</li>
+<p>////////////////////</p>
+{{/if}}

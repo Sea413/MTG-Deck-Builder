@@ -1,0 +1,26 @@
+{{yield}}
+{{#if addNewCard}}
+  <h1>New Card</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="img">Img</label>
+          {{input value=img id="img"}}
+        </div>
+
+        <div class="form-group">
+          <label for="color">Color</label>
+          {{input value=color id="color"}}
+        </div>
+
+        <button {{action 'save1'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'cardFormShow'}}>New Card</button>
+{{/if}}
