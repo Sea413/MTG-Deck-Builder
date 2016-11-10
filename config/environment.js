@@ -1,11 +1,18 @@
 /* jshint node: true */
+// import * as firebase from "firebase";
 
 module.exports = function(environment) {
+  var firebase = require("firebase");
   var ENV = {
+    firebase: {
+    apiKey: "AIzaSyAAmTM6fP0eNUVC3EfiOFZF9lTELZidG2I",
+    authDomain: "magiccards2.firebaseapp.com",
+    databaseURL: "https://magiccards2.firebaseio.com",
+    storageBucket: "firebase-magiccards2.appspot.com",
+    messagingSenderId: "173283059013",
+  },
     modulePrefix: 'magic',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://magiccards2.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -20,6 +27,16 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+ //  var config = {
+ //  // var firebase = require("firebase");
+ //
+ //   apiKey: "AIzaSyAAmTM6fP0eNUVC3EfiOFZF9lTELZidG2I",
+ //   authDomain: "magiccards2.firebaseapp.com",
+ //   databaseURL: "https://magiccards2.firebaseio.com",
+ //   storageBucket: "firebase-magiccards2.appspot.com",
+ //   messagingSenderId: "173283059013",
+ // };
+ // firebase.initializeApp(config);
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

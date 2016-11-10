@@ -1,6 +1,8 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+// import * as firebase from "firebase";
+
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
