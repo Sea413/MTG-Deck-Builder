@@ -8,9 +8,9 @@
 <li {{action 'hideCard'}}><img src ="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid={{cardz.multiverseid}}&type=card" height = "200" width = "150"/></li>
 <li>{{cardz.type}}</li>
 {{#if cardz.colors}}
-{{#link-to 'card' cardz.id}}<li>{{cardz.colors}}</li>{{/link-to}}
+<li>{{cardz.colors}}</li>
 {{else}}
-{{#link-to 'card' cardz.id}}<li>Colorless</li>{{/link-to}}
+<li>Colorless</li>
 
 {{/if}}
 
